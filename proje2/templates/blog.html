@@ -1,0 +1,42 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="blog.css">
+    <style>
+      .container {
+    margin-top: 50px;
+}
+
+.content-box {
+    background-color: #959e42;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e90000; /* Kenar rengi */
+}
+
+.display-4 {
+    color: #000000;
+    font-weight: bold;
+}
+
+.lead {
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+    </style>
+</head>
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="content-box">
+        <h1 class="display-4">Blog</h1>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi nemo ab voluptate tenetur qui magni quaerat minima veniam doloremque et. Facilis optio nostrum eos! Libero, ipsum fugiat? Ipsum, saepe voluptatum.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, facilis omnis id, at voluptate enim totam eos ab iste dolor veritatis quasi saepe sint vero ut pariatur quibusdam, quisquam quas.
+        </p>
+    </div>
+</div>
+{% endblock content %}
+

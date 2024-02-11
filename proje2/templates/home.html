@@ -1,0 +1,67 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="stil.css">
+</head>
+<style>
+    /* Ana Sayfa Stilleri */
+.jumbotron {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.jumbotron h1 {
+    color: #007bff;
+}
+
+.jumbotron p {
+    color: #555;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Kart Stilleri */
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: #007bff;
+}
+
+.card p {
+    color: #555;
+}
+
+</style>
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Hoş Geldiniz!</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, earum itaque, ducimus ipsam totam officia omnis maxime molestiae ex eius cumque sit soluta inventore quas officiis architecto voluptatibus eveniet ipsa!</p>
+        <hr class="my-4">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum repudiandae vero itaque asperiores ipsa veniam enim debitis! Veniam eaque neque aut sint voluptatem, a perferendis, soluta dolorum minima aliquam quos.</p>
+        <div class="text-center">
+            <a class="btn btn-primary btn-lg" href="{% url 'anasayfa' %}" role="button">Ana Sayfa</a>
+            <a class="btn btn-primary btn-lg" href="{% url 'blog' %}" role="button">Blog</a>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
